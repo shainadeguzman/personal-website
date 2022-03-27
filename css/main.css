@@ -656,12 +656,12 @@ p {
 }
 
 @media (min-width: 63.75em) {
-  .about__text p:first-child {
+  .about__text p__text p:first-child {
     font-size: 1.8rem;
   }
 }
 
-.about__text-paragraph {
+.about__text p__text-paragraph {
   margin-bottom: 1.4rem;
 }
 

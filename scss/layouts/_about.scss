@@ -97,15 +97,15 @@
 
   &__text p {
     font-size: 1.6rem;
-  }
 
-  &__text p:first-child {
-    @include respond-to(large) {
-      font-size: 1.8rem;
+    &__text p:first-child {
+      @include respond-to(large) {
+        font-size: 1.8rem;
+      }
     }
-  }
 
-  &__text-paragraph {
-    margin-bottom: 1.4rem;
+    &__text-paragraph {
+      margin-bottom: 1.4rem;
+    }
   }
 }
