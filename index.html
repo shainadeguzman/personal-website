@@ -17,7 +17,7 @@
       content="This is my Personal Portfolio Website where i showcase all the websites and apps i created"
     />
     <meta property="og:title" content="Shaina De Guzman's Portfolio Website" />
-    <meta property="og:url" content="" />
+    <meta property="og:url" content="shainadeguzman.netlify.app" />
     <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
     <link rel="stylesheet" href="css/main.css" />
     <link
@@ -291,11 +291,17 @@
                   and JavaScript.
                 </p>
                 <div class="projects__button-group">
-                  <a class="projects__btn-for-website button-primary" href="#">
+                  <a
+                    class="projects__btn-for-website button-primary"
+                    href="shainadeguzman.netlify.app"
+                  >
                     <span>Visit Website</span>
                     <i class="fas fa-globe"></i>
                   </a>
-                  <a class="projects__btn-for-code button-primary" href="#">
+                  <a
+                    class="projects__btn-for-code button-primary"
+                    href="https://github.com/shainadeguzman/personal-website"
+                  >
                     <span>Source Code</span>
                     <i class="fas fa-code"></i>
                   </a>
@@ -405,7 +411,12 @@
               </ul>
             </div>
             <div class="contact__form-content">
-              <form action="#" method="POST" class="contact__form">
+              <form
+                action="POST"
+                data-netlify="true"
+                class="contact__form"
+                data="netlify"
+              >
                 <div class="contact__form-row">
                   <div class="contact__input contact__input-name">
                     <label for="name">Name</label>
