@@ -155,11 +155,6 @@ p {
   color: #69667e;
 }
 
-@font-face {
-  src: url(/fonts/Heebo/Heebo-VariableFont_wght.ttf);
-  font-family: Heebo;
-}
-
 .header {
   padding: 1rem 0 0 0;
   position: fixed;
@@ -1088,7 +1083,7 @@ p {
   padding: 0.4rem;
   font-size: 1.6rem;
   background: #69667e47;
-  border: none;
+  border: 1px solid transparent;
   border-radius: 5px;
   color: #221e41;
   font-family: "Heebo", sans-serif;
@@ -1104,7 +1099,7 @@ p {
 .contact__input input:focus-visible,
 .contact textarea:focus-visible {
   outline: none;
-  border: 1px solid #6937ff;
+  border-color: #6937ff;
 }
 
 .contact__input input::-webkit-input-placeholder,

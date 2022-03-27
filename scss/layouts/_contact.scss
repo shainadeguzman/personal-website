@@ -108,7 +108,7 @@
     padding: 0.4rem;
     font-size: 1.6rem;
     background: #69667e47;
-    border: none;
+    border: 1px solid transparent;
     border-radius: 5px;
     color: $dark-blue;
     font-family: $heebo;
@@ -121,7 +121,7 @@
   &__input input:focus-visible,
   textarea:focus-visible {
     outline: none;
-    border: 1px solid $light-purple;
+    border-color: $light-purple;
   }
 
   &__input input::placeholder,
