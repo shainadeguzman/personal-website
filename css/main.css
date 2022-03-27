@@ -652,13 +652,7 @@ p {
 }
 
 .about__text p {
-  font-size: 1.4rem;
-}
-
-@media (min-width: 63.75em) {
-  .about__text p {
-    font-size: 1.7rem;
-  }
+  font-size: 1.6rem;
 }
 
 @media (min-width: 63.75em) {

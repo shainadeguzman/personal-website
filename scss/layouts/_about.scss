@@ -96,11 +96,7 @@
   }
 
   &__text p {
-    font-size: 1.4rem;
-
-    @include respond-to(large) {
-      font-size: 1.7rem;
-    }
+    font-size: 1.6rem;
   }
 
   &__text p:first-child {
