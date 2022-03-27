@@ -1156,7 +1156,7 @@ p {
   font-weight: 600;
   font-size: 1.5em;
   border: none;
-  padding: 0.4rem;
+  padding: 0.6rem 0.4rem;
   border-radius: 5px;
   font-family: "Heebo", sans-serif;
 }
