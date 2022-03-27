@@ -1,0 +1,18 @@
+/*
+0 - 769         Phone
+769 - 1020px:   Tablet (medium)
+1020 + :        Desktop (large)
+*/
+
+@mixin respond-to($breakpoint) {
+  @if $breakpoint == medium {
+    @media (min-width: 48.0625em) {
+      @content;
+    }
+  }
+  @if $breakpoint == large {
+    @media (min-width: 63.75em) {
+      @content;
+    }
+  }
+}

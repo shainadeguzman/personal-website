@@ -1,0 +1,39 @@
+.mobile__nav {
+  position: fixed;
+  background-color: $dark-blue;
+  min-height: 100vh;
+  width: 60%;
+  top: 0;
+  right: -100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: right 300ms ease;
+  text-align: center;
+  z-index: 4;
+
+  &.open {
+    right: 0;
+  }
+
+  &-list {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+  }
+
+  &-items:not(:last-child) {
+    margin-bottom: 4rem;
+  }
+
+  &-items > a {
+    padding: 0.1rem 0.2rem;
+    color: $primary-light;
+    text-decoration: none;
+    font-size: 1.8rem;
+  }
+
+  &-links.active {
+    border-bottom: 2px solid $primary-light;
+  }
+}

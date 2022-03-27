@@ -1,0 +1,106 @@
+.footer {
+  margin-top: 10rem;
+  padding-top: 10rem;
+  background-color: $dark-blue;
+
+  &__logo {
+    grid-column: 1 / span 4;
+    width: 15rem;
+    justify-self: center;
+
+    @include respond-to(medium) {
+      grid-column: 1 / span 8;
+    }
+
+    @include respond-to(large) {
+      grid-column: 1 / span 12;
+    }
+  }
+
+  &__logo path {
+    fill: $primary-light;
+  }
+
+  &__logo circle {
+    fill: $light-purple;
+  }
+
+  &__text {
+    grid-column: 1 / span 4;
+    text-align: center;
+    font-size: 1.8rem;
+    color: $primary-light;
+    padding: 5rem 0;
+
+    @include respond-to(medium) {
+      grid-column: 1 / span 8;
+    }
+
+    @include respond-to(large) {
+      grid-column: 1 / span 12;
+    }
+  }
+
+  &__row {
+    grid-column: 1 / span 4;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5rem 0 2.2rem 0;
+    flex-direction: column;
+    border-top: 1px solid $dark-gray;
+
+    @include respond-to(medium) {
+      grid-column: 1 / span 8;
+      flex-direction: row;
+    }
+
+    @include respond-to(large) {
+      grid-column: 1 / span 12;
+    }
+  }
+
+  &__row p {
+    font-size: 1.6rem;
+    margin-bottom: 1.8rem;
+  }
+
+  &__row p a {
+    color: $dark-gray;
+    text-decoration: none;
+  }
+
+  &__row ul {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+  }
+
+  &__row li:not(:last-child) {
+    margin-right: 1.8rem;
+  }
+
+  &__row ul a {
+    display: inline-block;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 3.4rem;
+    width: 3.4rem;
+    border-radius: 50%;
+    font-size: 1.8rem;
+    border: 1px solid $light-purple;
+    background-color: $light-purple;
+    color: $primary-light;
+    transition: background $transition ease, border $transition ease;
+
+    &:hover {
+      color: $light-purple;
+      background-color: $primary-light;
+      border-color: $primary-light;
+    }
+  }
+}

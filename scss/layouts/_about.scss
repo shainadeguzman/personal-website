@@ -1,0 +1,115 @@
+.about {
+  padding: 7rem 0;
+  margin-top: -8rem;
+  line-height: 1.6;
+
+  @include respond-to(medium) {
+    padding: $section-padding;
+  }
+
+  & .grid-container {
+    @include respond-to(medium) {
+      column-gap: 6rem;
+    }
+  }
+
+  &__skills {
+    grid-column: 1/-1;
+    transition: transform 0.7s cubic-bezier(0.075, 0.82, 0.165, 1) 0.1s,
+      opacity 1s cubic-bezier(0.075, 0.82, 0.165, 1) 0.2s;
+
+    @include respond-to(medium) {
+      grid-column: 5 / span 4;
+    }
+
+    @include respond-to(large) {
+      grid-column: 8 / span 5;
+    }
+  }
+
+  &__skills h2 {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+    color: $dark-blue;
+  }
+
+  &__list {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+    display: flex;
+    gap: 3rem;
+    flex-wrap: wrap;
+  }
+
+  &__list li {
+    display: flex;
+    align-items: center;
+    font-size: 1.3rem;
+    border-radius: 5px;
+    color: $light-purple;
+    flex: 0 0 auto;
+  }
+
+  &__list li i {
+    font-size: 2.4rem;
+    margin-right: 0.6rem;
+  }
+
+  &__text {
+    grid-column: 1/-1;
+    align-self: center;
+    transition: transform 0.7s cubic-bezier(0.075, 0.82, 0.165, 1) 0.2s,
+      opacity 1s cubic-bezier(0.075, 0.82, 0.165, 1) 0.3s;
+
+    @include respond-to(medium) {
+      grid-column: 1 / span 4;
+    }
+
+    @include respond-to(large) {
+      grid-column: 1 / span 7;
+    }
+  }
+
+  &__skills,
+  &__text {
+    backface-visibility: hidden;
+    transform: translateY(40%);
+    opacity: 0;
+  }
+
+  &__skills.reveal,
+  &__text.reveal {
+    transform: translateY(0);
+    opacity: 1;
+  }
+
+  &__name {
+    font-size: 1.6rem;
+    margin-bottom: 1.4rem;
+    font-weight: 600;
+    color: $dark-blue;
+
+    @include respond-to(large) {
+      font-size: 1.8rem;
+    }
+  }
+
+  &__text p {
+    font-size: 1.4rem;
+
+    @include respond-to(large) {
+      font-size: 1.7rem;
+    }
+  }
+
+  &__text p:first-child {
+    @include respond-to(large) {
+      font-size: 1.8rem;
+    }
+  }
+
+  &__text-paragraph {
+    margin-bottom: 1.4rem;
+  }
+}
