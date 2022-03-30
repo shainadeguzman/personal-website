@@ -824,18 +824,7 @@ p {
   transition: transform 400ms ease;
   transition: transform 400ms ease, -webkit-transform 400ms ease;
   padding: 1.4rem;
-}
-
-.projects-2__box:nth-child(1) {
-  background-color: #16b9b9;
-}
-
-.projects-2__box:nth-child(2) {
-  background-color: #dd596f;
-}
-
-.projects-2__box:nth-child(3) {
-  background-color: #211e40;
+  border: 1px solid #221e41;
 }
 
 .projects-2__image {
@@ -853,7 +842,7 @@ p {
 }
 
 .projects-2__box img {
-  width: 70%;
+  width: 100%;
 }
 
 .projects-2__info {
@@ -870,14 +859,14 @@ p {
 
 .projects-2__info h2 {
   font-size: 1.4rem;
-  color: #fff;
+  color: #221e41;
   font-weight: 500;
 }
 
 .projects-2__btn {
-  color: #fff;
+  color: #221e41;
   font-size: 1.4rem;
-  border-bottom: 1px solid #fff;
+  border-bottom: 1px solid #221e41;
   text-decoration: none;
   -webkit-transition: -webkit-transform 400ms ease;
   transition: -webkit-transform 400ms ease;

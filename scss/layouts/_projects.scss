@@ -124,18 +124,7 @@
     border-radius: 5px;
     transition: transform $transition ease;
     padding: 1.4rem;
-  }
-
-  &-2__box:nth-child(1) {
-    background-color: #16b9b9;
-  }
-
-  &-2__box:nth-child(2) {
-    background-color: #dd596f;
-  }
-
-  &-2__box:nth-child(3) {
-    background-color: #211e40;
+    border: 1px solid $dark-blue;
   }
 
   &-2__image {
@@ -147,7 +136,7 @@
   }
 
   &-2__box img {
-    width: 70%;
+    width: 100%;
   }
 
   &-2__info {
@@ -158,14 +147,14 @@
 
   &-2__info h2 {
     font-size: 1.4rem;
-    color: $primary-light;
+    color: $dark-blue;
     font-weight: 500;
   }
 
   &-2__btn {
-    color: $primary-light;
+    color: $dark-blue;
     font-size: 1.4rem;
-    border-bottom: 1px solid $primary-light;
+    border-bottom: 1px solid $dark-blue;
     text-decoration: none;
     transition: transform $transition ease;
     background-color: transparent;
