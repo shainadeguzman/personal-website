@@ -111,12 +111,16 @@
 
   &-2__container > div {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+    grid-template-columns: 1fr;
     gap: 3rem;
     justify-content: center;
 
     @include respond-to(medium) {
-      grid-template-columns: repeat(auto-fit, minmax(20rem, 0.8fr));
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    @include respond-to(large) {
+      grid-template-columns: repeat(3, 1fr);
     }
   }
 

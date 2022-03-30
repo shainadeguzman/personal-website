@@ -802,8 +802,8 @@ p {
 .projects-2__container > div {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (minmax(20rem, 1fr))[auto-fit];
-      grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
   gap: 3rem;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
@@ -812,8 +812,15 @@ p {
 
 @media (min-width: 48.0625em) {
   .projects-2__container > div {
-    -ms-grid-columns: (minmax(20rem, 0.8fr))[auto-fit];
-        grid-template-columns: repeat(auto-fit, minmax(20rem, 0.8fr));
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 63.75em) {
+  .projects-2__container > div {
+    -ms-grid-columns: (1fr)[3];
+        grid-template-columns: repeat(3, 1fr);
   }
 }
 
