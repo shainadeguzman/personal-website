@@ -850,6 +850,7 @@ p {
 
 .projects-2__box img {
   width: 100%;
+  border-radius: 5px;
 }
 
 .projects-2__info {
