@@ -528,13 +528,6 @@ p {
   }
 }
 
-@media (min-width: 48.0625em) {
-  .about .grid-container {
-    -webkit-column-gap: 6rem;
-            column-gap: 6rem;
-  }
-}
-
 .about__skills {
   grid-column: 1/-1;
   -webkit-transition: opacity 1s cubic-bezier(0.075, 0.82, 0.165, 1) 0.2s, -webkit-transform 0.7s cubic-bezier(0.075, 0.82, 0.165, 1) 0.1s;
@@ -545,9 +538,9 @@ p {
 
 @media (min-width: 48.0625em) {
   .about__skills {
-    -ms-grid-column: 5;
+    -ms-grid-column: 6;
     -ms-grid-column-span: 4;
-    grid-column: 5 / span 4;
+    grid-column: 6 / span 4;
   }
 }
 
@@ -619,8 +612,8 @@ p {
 @media (min-width: 63.75em) {
   .about__text {
     -ms-grid-column: 1;
-    -ms-grid-column-span: 7;
-    grid-column: 1 / span 7;
+    -ms-grid-column-span: 6;
+    grid-column: 1 / span 6;
   }
 }
 

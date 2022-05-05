@@ -7,19 +7,13 @@
     padding: $section-padding;
   }
 
-  & .grid-container {
-    @include respond-to(medium) {
-      column-gap: 6rem;
-    }
-  }
-
   &__skills {
     grid-column: 1/-1;
     transition: transform 0.7s cubic-bezier(0.075, 0.82, 0.165, 1) 0.1s,
       opacity 1s cubic-bezier(0.075, 0.82, 0.165, 1) 0.2s;
 
     @include respond-to(medium) {
-      grid-column: 5 / span 4;
+      grid-column: 6 / span 4;
     }
 
     @include respond-to(large) {
@@ -67,7 +61,7 @@
     }
 
     @include respond-to(large) {
-      grid-column: 1 / span 7;
+      grid-column: 1 / span 6;
     }
   }
 
