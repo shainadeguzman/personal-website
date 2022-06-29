@@ -151,22 +151,30 @@
   }
 
   &-2__info h2 {
-    font-size: 1.4rem;
+    font-size: 1.8rem;
     color: $dark-blue;
     font-weight: 500;
   }
 
   &-2__btn {
-    color: $dark-blue;
-    font-size: 1.4rem;
-    border-bottom: 1px solid $dark-blue;
     text-decoration: none;
+    color: $dark-blue;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
     transition: transform $transition ease;
-    background-color: transparent;
   }
 
-  &-2__info .icon {
-    margin-left: 1rem;
+  &-2__btn:hover {
+    transform: translateY(-0.2rem);
+  }
+
+  &-2__btn .icon {
+    font-size: 2.2rem;
+  }
+
+  &-2__btn:first-child {
+    margin-right: 1.8rem;
   }
 
   // 780px
