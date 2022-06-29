@@ -63,15 +63,9 @@
     margin-right: 2rem;
   }
 
-  &__button-group span {
-    margin-right: 1.2rem;
-  }
-
-  &__btn-for-website span,
-  &__btn-for-code span {
-    @include respond-to(large) {
-      font-size: 1.3rem;
-    }
+  &__btn-for-website i,
+  &__btn-for-code i {
+    margin-left: 1.4rem;
   }
 
   &__button-group {
@@ -204,10 +198,6 @@
   @media (max-width: 20em) {
     .projects__btn-for-website {
       margin-right: 1rem;
-    }
-
-    .projects__button-group a {
-      padding: 0.6rem 0.6rem;
     }
   }
 }
