@@ -40,10 +40,10 @@
   }
 
   &__cta {
-    font-size: $font-content-medium;
+    font-size: 1.5rem;
 
     @include respond-to(large) {
-      font-size: $font-content-large;
+      font-size: $font-content-medium;
     }
   }
 
