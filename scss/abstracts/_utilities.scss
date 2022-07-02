@@ -50,7 +50,7 @@
 
 .section-title {
   max-width: 40rem;
-  font-size: $font-section-headers;
+  font-size: $font-section-headers-large;
   text-align: center;
   text-transform: capitalize;
   margin: 0 auto 0.6rem auto;
@@ -65,7 +65,7 @@
   text-align: center;
   max-width: 40rem;
   margin: 0 auto 4rem auto;
-  font-size: $font-content;
+  font-size: $font-content-large;
 }
 
 .section__title.reveal {

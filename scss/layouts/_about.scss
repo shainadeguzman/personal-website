@@ -22,7 +22,7 @@
   }
 
   &__skills h2 {
-    font-size: 1.5rem;
+    font-size: $font-content-medium;
     margin-bottom: 2rem;
     color: $dark-blue;
   }
@@ -89,14 +89,8 @@
     }
   }
 
-  &__text p {
-    font-size: 1.6rem;
-
-    &__text p:first-child {
-      @include respond-to(large) {
-        font-size: 1.8rem;
-      }
-    }
+  &__text p:first-child {
+    font-size: $font-content-medium;
 
     &__text-paragraph {
       margin-bottom: 1.4rem;
