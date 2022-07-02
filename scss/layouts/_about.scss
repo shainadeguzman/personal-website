@@ -22,9 +22,13 @@
   }
 
   &__skills h2 {
-    font-size: $font-content-medium;
+    font-size: $font-section-sub-headers-medium;
     margin-bottom: 2rem;
     color: $dark-blue;
+
+    @include respond-to(large) {
+      font-size: $font-section-sub-headers-large;
+    }
   }
 
   &__list {
@@ -39,10 +43,14 @@
   &__list li {
     display: flex;
     align-items: center;
-    font-size: 1.3rem;
     border-radius: 5px;
     color: $light-purple;
     flex: 0 0 auto;
+    font-size: $font-content-medium;
+
+    @include respond-to(large) {
+      font-size: $font-content-large;
+    }
   }
 
   &__list li i {
@@ -79,18 +87,17 @@
   }
 
   &__name {
-    font-size: 1.6rem;
     margin-bottom: 1.4rem;
     font-weight: 600;
     color: $dark-blue;
-
-    @include respond-to(large) {
-      font-size: 1.8rem;
-    }
   }
 
   &__text p:first-child {
-    font-size: $font-content-medium;
+    font-size: $font-section-sub-headers-medium;
+
+    @include respond-to(large) {
+      font-size: $font-section-sub-headers-large;
+    }
 
     &__text-paragraph {
       margin-bottom: 1.4rem;
@@ -99,5 +106,13 @@
 
   &__text p:nth-child(2) {
     margin-bottom: 1.8rem;
+  }
+
+  &__text p:not(:first-child) {
+    font-size: $font-content-medium;
+
+    @include respond-to(large) {
+      font-size: $font-content-large;
+    }
   }
 }
