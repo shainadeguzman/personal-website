@@ -39,6 +39,14 @@
     line-height: 1.6;
   }
 
+  &__cta {
+    font-size: $font-content-medium;
+
+    @include respond-to(large) {
+      font-size: $font-content-large;
+    }
+  }
+
   &__icon {
     margin-left: 2rem;
   }
