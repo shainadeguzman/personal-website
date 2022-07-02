@@ -183,13 +183,14 @@
     width: 10rem;
     background-color: $light-purple;
     color: $primary-light;
-    transition: background $transition ease;
-    font-weight: 600;
+    transition: background $transition ease, box-shadow $transition ease-in-out;
+    font-weight: 500;
     font-size: 1.5em;
     border: none;
     padding: 0.6rem 0.4rem;
     border-radius: 5px;
     font-family: $heebo;
+    letter-spacing: 1px;
 
     &:focus-visible {
       outline: none;
