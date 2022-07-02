@@ -18,9 +18,14 @@
   &__is-column-right {
     flex-basis: calc(100% / 2);
     transition: transform 0.7s cubic-bezier(0.075, 0.82, 0.165, 1) 0.1s,
-      opacity 1s cubic-bezier(0.075, 0.82, 0.165, 1) 0.1s;
+      opacity 1s cubic-bezier(0.075, 0.82, 0.165, 1) 0.1s,
+      box-shadow $transition ease-in-out;
     border-radius: 6px;
-    border: 1px solid $dark-blue;
+    border: 1px solid $light-gray;
+  }
+
+  &__is-column-right:hover {
+    box-shadow: 1px 1px 15px $light-gray;
   }
 
   &__is-column-left {
@@ -106,7 +111,8 @@
   &-2__container > div {
     display: grid;
     grid-template-columns: 1fr;
-    gap: 3rem;
+    column-gap: 3rem;
+    row-gap: 5rem;
     justify-content: center;
 
     @include respond-to(medium) {
@@ -120,9 +126,13 @@
 
   &-2__box {
     border-radius: 5px;
-    transition: transform $transition ease;
+    transition: transform $transition ease, box-shadow $transition ease-in-out;
     padding: 1.4rem;
-    border: 1px solid $dark-blue;
+    border: 1px solid $light-gray;
+  }
+
+  &-2__box:hover {
+    box-shadow: 1px 1px 15px $light-gray;
   }
 
   &-2__image {
