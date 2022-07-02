@@ -79,6 +79,11 @@
     font-size: 1.6rem;
   }
 
+  &__info-list a {
+    font-size: 1.6rem;
+    color: $dark-gray;
+  }
+
   &__form {
     padding: 3rem 0;
   }
