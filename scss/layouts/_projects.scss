@@ -55,13 +55,21 @@
   &__is-column-left h2 {
     font-weight: 600;
     color: $dark-blue;
-    font-size: 2.2rem;
+    font-size: $font-section-sub-headers-medium;
     margin-bottom: 1.2rem;
+
+    @include respond-to(large) {
+      font-size: $font-section-sub-headers-large;
+    }
   }
 
   &__is-column-left p {
-    font-size: 1.7rem;
+    font-size: $font-content-medium;
     margin-bottom: 2.6rem;
+
+    @include respond-to(large) {
+      font-size: $font-content-large;
+    }
   }
 
   &__btn-for-website {
@@ -104,8 +112,12 @@
   &-2__title {
     text-align: center;
     margin-bottom: 2.6rem;
-    font-size: 1.6rem;
+    font-size: $font-section-sub-headers-medium;
     color: $dark-blue;
+
+    @include respond-to(large) {
+      font-size: $font-section-sub-headers-large;
+    }
   }
 
   &-2__container > div {
@@ -155,9 +167,13 @@
   }
 
   &-2__info h2 {
-    font-size: 1.8rem;
+    font-size: $font-content-medium;
     color: $dark-blue;
     font-weight: 500;
+
+    @include respond-to(large) {
+      font-size: $font-content-large;
+    }
   }
 
   &-2__btn {
