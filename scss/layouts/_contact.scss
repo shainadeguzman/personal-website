@@ -69,18 +69,26 @@
   }
 
   &__info-list h3 {
-    font-size: 1.7rem;
+    font-size: $font-section-sub-headers-medium;
     margin-bottom: 0.3rem;
     font-weight: 600;
     color: $dark-blue;
+
+    @include respond-to(large) {
+      font-size: $font-section-sub-headers-large;
+    }
   }
 
-  &__info-list p {
-    font-size: 1.6rem;
+  &__info-list p,
+  &__info-list a {
+    font-size: $font-content-medium;
+
+    @include respond-to(large) {
+      font-size: $font-content-large;
+    }
   }
 
   &__info-list a {
-    font-size: 1.6rem;
     color: $dark-gray;
   }
 
@@ -99,19 +107,23 @@
   }
 
   &__input label {
-    font-size: 1.6rem;
+    font-size: $font-section-sub-headers-medium;
     font-weight: 500;
     display: inline-block;
     margin-bottom: 0.6rem;
     color: $dark-blue;
+
+    @include respond-to(large) {
+      font-size: $font-section-sub-headers-large;
+    }
   }
 
   &__input input,
   textarea {
     width: 100%;
-    height: 4.5rem;
+    height: 3rem;
     padding: 0.4rem;
-    font-size: 1.6rem;
+    font-size: $font-content-medium;
     background: #69667e1a;
     border: 1px solid transparent;
     border-radius: 5px;
@@ -119,7 +131,11 @@
     font-family: $heebo;
 
     @include respond-to(medium) {
-      height: 3rem;
+      height: 4rem;
+    }
+
+    @include respond-to(large) {
+      font-size: $font-content-large;
     }
   }
 
@@ -133,7 +149,11 @@
   textarea::placeholder {
     opacity: 0.5;
     color: $dark-gray;
-    font-size: 1.5rem;
+    font-size: $font-content-medium;
+
+    @include respond-to(large) {
+      font-size: $font-content-large;
+    }
   }
 
   &__input textarea {
