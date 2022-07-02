@@ -8,6 +8,7 @@ I created this website because my passion and interest is in this kind of field 
 - HTML
 - CSS
 - JAVASCRIPT
+- SASS
 
 ## What i used
 
