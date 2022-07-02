@@ -20,7 +20,6 @@
   padding: 1rem 1.6rem;
   text-decoration: none;
   text-transform: capitalize;
-  font-size: 1.5rem;
   background-color: $light-purple;
   color: $primary-light;
   border-radius: 8px;
@@ -51,7 +50,7 @@
 
 .section-title {
   max-width: 40rem;
-  font-size: 1.8rem;
+  font-size: $font-section-headers;
   text-align: center;
   text-transform: capitalize;
   margin: 0 auto 0.6rem auto;
@@ -66,7 +65,7 @@
   text-align: center;
   max-width: 40rem;
   margin: 0 auto 4rem auto;
-  font-size: 1.5rem;
+  font-size: 1.9rem;
 }
 
 .section__title.reveal {
