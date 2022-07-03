@@ -62,6 +62,10 @@
     margin-top: 0;
   }
 
+  &__info-list li:last-child {
+    margin-bottom: 0;
+  }
+
   &__info-list i {
     margin-right: 2rem;
     font-size: 2.4rem;
