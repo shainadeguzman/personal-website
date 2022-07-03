@@ -75,7 +75,11 @@
   &__btn-for-website,
   &__btn-for-code {
     margin-right: 2rem;
-    font-size: 1.5rem;
+    font-size: 1.3rem;
+
+    @include respond-to(large) {
+      font-size: 1.5rem;
+    }
   }
 
   &__btn-for-website i,
