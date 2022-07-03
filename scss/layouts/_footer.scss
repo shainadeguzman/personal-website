@@ -64,6 +64,7 @@
   &__row p {
     font-size: $font-content-medium;
     margin-bottom: 1.8rem;
+    text-align: center;
 
     @include respond-to(large) {
       font-size: $font-content-large;
