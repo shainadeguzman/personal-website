@@ -1,7 +1,11 @@
 .hero {
-  min-height: 80rem;
+  min-height: 60rem;
   display: flex;
   align-items: center;
+
+  @include respond-to(large) {
+    min-height: 80rem;
+  }
 
   & .grid-container {
     column-gap: 7rem;
@@ -27,9 +31,13 @@
   }
 
   &__big-paragraph {
-    font-size: 4rem;
+    font-size: 3rem;
     margin-bottom: 1.6rem;
     color: $dark-blue;
+
+    @include respond-to(large) {
+      font-size: 4rem;
+    }
   }
 
   &__long-paragraph {
