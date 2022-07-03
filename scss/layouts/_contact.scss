@@ -9,6 +9,8 @@
     grid-column: 1 / span 4;
     transition: transform 0.7s cubic-bezier(0.075, 0.82, 0.165, 1) 0.1s,
       opacity 1s cubic-bezier(0.075, 0.82, 0.165, 1) 0.1s;
+    display: flex;
+    align-items: center;
 
     @include respond-to(medium) {
       grid-column: 1 / span 3;
