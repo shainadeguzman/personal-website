@@ -13,7 +13,7 @@ const projectColumnLeft = document.querySelectorAll(
 const projectColumnRight = document.querySelectorAll(
   ".projects__is-column-right"
 );
-const project2BoxContainer = document.querySelectorAll(".projects-2__box");
+const project2Container = document.querySelector(".projects-2__container");
 const contactInfo = document.querySelector(".contact__info-content");
 const contactFormm = document.querySelector(".contact__form-content");
 
@@ -64,22 +64,15 @@ const revealItem = function (entries, observer) {
 sectionsTitle.forEach((sectionTitle) => {
   createNewObserver(sectionTitle, revealItem, options);
 });
-
 createNewObserver(aboutSkills, revealItem, options);
-
 createNewObserver(aboutText, revealItem, options);
-
 projectColumnLeft.forEach((columnLeft) => {
   createNewObserver(columnLeft, revealItem, options);
 });
-
 projectColumnRight.forEach((columnRight) => {
   createNewObserver(columnRight, revealItem, options);
 });
 
-project2BoxContainer.forEach((projectBox) => {
-  createNewObserver(projectBox, revealItem, options);
-});
-
+createNewObserver(project2Container, revealItem, options);
 createNewObserver(contactInfo, revealItem, options);
 createNewObserver(contactFormm, revealItem, options);
