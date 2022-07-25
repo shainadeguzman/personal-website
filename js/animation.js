@@ -13,7 +13,7 @@ const projectColumnLeft = document.querySelectorAll(
 const projectColumnRight = document.querySelectorAll(
   ".projects__is-column-right"
 );
-const project2Container = document.querySelector(".projects-2__container");
+const project2Boxes = document.querySelectorAll(".projects-2__box");
 const contactInfo = document.querySelector(".contact__info-content");
 const contactFormm = document.querySelector(".contact__form-content");
 
@@ -72,7 +72,9 @@ projectColumnLeft.forEach((columnLeft) => {
 projectColumnRight.forEach((columnRight) => {
   createNewObserver(columnRight, revealItem, options);
 });
+project2Boxes.forEach((project2Box) => {
+  createNewObserver(project2Box, revealItem, options);
+});
 
-createNewObserver(project2Container, revealItem, options);
 createNewObserver(contactInfo, revealItem, options);
 createNewObserver(contactFormm, revealItem, options);
