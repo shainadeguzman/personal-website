@@ -12,14 +12,19 @@
   text-align: center;
   z-index: 4;
 
-  &.open {
-    right: 0;
-  }
-
   &-list {
     padding: 0;
     margin: 0;
     list-style: none;
+    display: none;
+  }
+
+  &.open {
+    right: 0;
+
+    ul {
+      display: block;
+    }
   }
 
   &-items:not(:last-child) {

@@ -21,11 +21,10 @@
       opacity 1s cubic-bezier(0.075, 0.82, 0.165, 1) 0.1s,
       box-shadow $transition ease-in-out;
     border-radius: 6px;
-    border: 1px solid $light-gray;
   }
 
-  &__is-column-right:hover {
-    box-shadow: 1px 1px 15px $light-gray;
+  &__is-column-right.border {
+    border: 1px solid $light-gray;
   }
 
   &__is-column-left {
@@ -48,7 +47,9 @@
   }
 
   &__is-column-right img {
+    height: 100%;
     width: 100%;
+    object-fit: cover;
     border-radius: 10px;
   }
 
@@ -67,6 +68,36 @@
     font-size: $font-content-medium;
     margin-bottom: 2.6rem;
 
+    a {
+      color: $dark-blue;
+      font-weight: 500;
+      text-underline-offset: 0.3rem;
+      text-decoration: none;
+      position: relative;
+      outline: 2px dashed transparent;
+      transition: all 0.2s ease;
+    }
+
+    a::after {
+      position: absolute;
+      bottom: 0.1rem;
+      left: 0;
+      content: "";
+      width: 0;
+      height: 1px;
+      background-color: $dark-blue;
+      transition: width $transition ease;
+    }
+
+    a:hover::after {
+      width: 100%;
+    }
+
+    a:focus-visible {
+      outline-color: $light-purple;
+      outline-offset: 2px;
+    }
+
     @include respond-to(large) {
       font-size: $font-content-large;
     }
@@ -74,12 +105,20 @@
 
   &__btn-for-website,
   &__btn-for-code {
-    margin-right: 2rem;
+    margin-right: 2.6rem;
     font-size: 1.2rem;
+    outline: 2px dashed transparent;
+    transition: all 0.2s ease;
 
     @include respond-to(large) {
       font-size: 1.5rem;
     }
+  }
+
+  &__btn-for-website:focus-visible,
+  &__btn-for-code:focus-visible {
+    outline-color: $light-purple;
+    outline-offset: 5px;
   }
 
   &__btn-for-website i,
@@ -189,6 +228,13 @@
     align-items: center;
     justify-content: center;
     transition: transform $transition ease;
+    outline: 2px dashed transparent;
+    transition: all 0.2s ease;
+  }
+
+  &-2__btn:focus-visible {
+    outline-color: $light-purple;
+    outline-offset: 5px;
   }
 
   &-2__btn:hover {
@@ -200,7 +246,7 @@
   }
 
   &-2__btn:first-child {
-    margin-right: 1.6rem;
+    margin-right: 2rem;
   }
 
   // 780px

@@ -37,7 +37,7 @@
     <header class="header">
       <div class="main-container">
         <nav class="header__navigation">
-          <a href="index.html" class="header__logo">
+          <a href="index.html" class="header__logo tab-item">
             <svg
               version="1.1"
               id="Layer_1"
@@ -94,22 +94,34 @@
 
           <ul class="header__list">
             <li class="header__items">
-              <a class="header__link home-section active" href="#home-section">
+              <a
+                class="header__link home-section active tab-item"
+                href="#home-section"
+              >
                 Home
               </a>
             </li>
             <li class="header__items">
-              <a class="header__link about-section" href="#about-section">
+              <a
+                class="header__link about-section tab-item"
+                href="#about-section"
+              >
                 About
               </a>
             </li>
             <li class="header__items">
-              <a class="header__link projects-section" href="#projects-section">
+              <a
+                class="header__link projects-section tab-item"
+                href="#projects-section"
+              >
                 Projects
               </a>
             </li>
             <li class="header__items">
-              <a class="header__link contact-section" href="#contact-section">
+              <a
+                class="header__link contact-section tab-item"
+                href="#contact-section"
+              >
                 Contact
               </a>
             </li>
@@ -168,7 +180,7 @@
                 Applications.
               </p>
               <a
-                class="hero__cta button-primary"
+                class="hero__cta button-primary tab-item"
                 href="Shaina-De-Guzman-Resume.pdf"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -280,14 +292,14 @@
           </p>
           <div class="grid-container">
             <div class="projects__container">
-              <div class="projects__is-column-right">
+              <div class="projects__is-column-right border">
                 <img
                   srcset="
                     img/personal-website-small.png 1200w,
                     img/personal-website-large.png 2560w
                   "
                   sizes="(min-width: 769px) 87vw, (min-width: 1020px) 43vw, 646px"
-                  alt="project mockup"
+                  alt="personal-website"
                   src="img/project-1-large.png"
                 />
               </div>
@@ -300,7 +312,7 @@
                 </p>
                 <div class="projects__button-group">
                   <a
-                    class="projects__btn-for-website button-primary"
+                    class="projects__btn-for-website button-primary tab-item"
                     href="https://deguzman.netlify.app/"
                     target="_blank"
                     rel="noopener noreferrer"
@@ -309,7 +321,7 @@
                     <i class="fa fa-external-link"></i>
                   </a>
                   <a
-                    class="projects__btn-for-code button-primary"
+                    class="projects__btn-for-code button-primary tab-item"
                     href="https://github.com/shainadeguzman/personal-website"
                     target="_blank"
                     rel="noopener noreferrer"
@@ -320,42 +332,88 @@
                 </div>
               </div>
             </div>
+            <div class="projects__container">
+              <div class="projects__is-column-right">
+                <img
+                  srcset="
+                    img/e-learning-platform-small.png 1200w,
+                    img/e-learning-platform.png       2800w
+                  "
+                  sizes="(min-width: 769px) 87vw, (min-width: 1020px) 43vw, 646px"
+                  alt="E-Learning Platform Landing Page "
+                  src="img/e-learning-platform.png"
+                />
+              </div>
+              <div class="projects__is-column-left">
+                <h2>E-Learning Platform Landing Page</h2>
+                <p>
+                  This a Landing Page Design from Figma made by
+                  <a
+                    href="https://www.figma.com/@vinaytekwani"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="tab-item"
+                    >Vinay Tekwani</a
+                  >, that I built using HTML, CSS and JavaScript. I developed
+                  this project to practice Semantic HTML.
+                </p>
+                <div class="projects__button-group">
+                  <a
+                    class="projects__btn-for-website button-primary tab-item"
+                    href="https://shainadeguzman.github.io/e-learning-platform-landing-page/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    Visit Website
+                    <i class="fa fa-external-link"></i>
+                  </a>
+                  <a
+                    class="projects__btn-for-code button-primary tab-item"
+                    href="https://github.com/shainadeguzman/e-learning-platform-landing-page"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    Source Code
+                    <i class="fab fa-github"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="projects__container">
+              <div class="projects__is-column-right">
+                <img
+                  srcset="
+                    img/pdc-flow-website-small.png 1200w,
+                    img/pdc-flow-website.png       2800w
+                  "
+                  sizes="(min-width: 769px) 87vw, (min-width: 1020px) 43vw, 646px"
+                  alt="pdc flow website project image"
+                  src="img/pdc-flow-website.png"
+                />
+              </div>
+              <div class="projects__is-column-left">
+                <h2>PDCflow API Website redesign</h2>
+                <p>
+                  PDCflow API Reference is a website where you can find the list
+                  of PDCflow APIs. I redesign it using Figma.
+                </p>
+                <div class="projects__button-group">
+                  <a
+                    class="projects__btn-for-website button-primary tab-item"
+                    href="https://www.figma.com/file/1GgUcI3LjpBifymsv7P4s8/PDCflow?node-id=0%3A1&t=3Y7AKJ7MzTlsHwRm-1"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    view design
+                    <i class="fa fa-external-link"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
             <!-- OTHER PROJECTS -->
             <div class="projects-2__container">
               <h1 class="projects-2__title">Other Projects</h1>
               <div>
-                <figure class="projects-2__box">
-                  <div class="projects-2__image">
-                    <img
-                      srcset="
-                        img/rating-component-small.png 1280w,
-                        img/rating-component.png       2560w
-                      "
-                      sizes="(min-width: 769px) 3vw, (min-width: 1020px) 5vw, 390px"
-                      alt="project screenshot"
-                      src="img/pen-1.png"
-                    />
-                  </div>
-                  <div class="projects-2__info">
-                    <h2>Rating Component</h2>
-                    <div class="projects-2__links">
-                      <a
-                        class="projects-2__btn"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        href="https://github.com/shainadeguzman/interactive-rating-component"
-                        ><i class="fab fa-github icon"></i
-                      ></a>
-                      <a
-                        class="projects-2__btn"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        href="https://shainadeguzman.github.io/interactive-rating-component/"
-                        ><i class="fa fa-external-link icon"></i
-                      ></a>
-                    </div>
-                  </div>
-                </figure>
                 <figure class="projects-2__box">
                   <div class="projects-2__image">
                     <img
@@ -372,14 +430,14 @@
                     <h2>Tip Calculator</h2>
                     <div class="projects-2__links">
                       <a
-                        class="projects-2__btn"
+                        class="projects-2__btn tab-item"
                         target="_blank"
                         rel="noopener noreferrer"
                         href="https://github.com/shainadeguzman/tip-calculator"
                         ><i class="fab fa-github icon"></i
                       ></a>
                       <a
-                        class="projects-2__btn"
+                        class="projects-2__btn tab-item"
                         target="_blank"
                         rel="noopener noreferrer"
                         href="https://shainadeguzman.github.io/tip-calculator/"
@@ -404,14 +462,14 @@
                     <h2>Todo App</h2>
                     <div class="projects-2__links">
                       <a
-                        class="projects-2__btn"
+                        class="projects-2__btn tab-item"
                         target="_blank"
                         rel="noopener noreferrer"
                         href="https://github.com/shainadeguzman/todo-list-app"
                         ><i class="fab fa-github icon"></i
                       ></a>
                       <a
-                        class="projects-2__btn"
+                        class="projects-2__btn tab-item"
                         target="_blank"
                         rel="noopener noreferrer"
                         href="https://shainadeguzman.github.io/todo-list-app/"
@@ -436,81 +494,17 @@
                     <h2>Social Proof Section</h2>
                     <div class="projects-2__links">
                       <a
-                        class="projects-2__btn"
+                        class="projects-2__btn tab-item"
                         target="_blank"
                         rel="noopener noreferrer"
                         href="https://github.com/shainadeguzman/social-proof-section"
                         ><i class="fab fa-github icon"></i
                       ></a>
                       <a
-                        class="projects-2__btn"
+                        class="projects-2__btn tab-item"
                         target="_blank"
                         rel="noopener noreferrer"
                         href="https://shainadeguzman.github.io/social-proof-section/"
-                        ><i class="fa fa-external-link icon"></i
-                      ></a>
-                    </div>
-                  </div>
-                </figure>
-                <figure class="projects-2__box">
-                  <div class="projects-2__image">
-                    <img
-                      srcset="
-                        img/sign-up-form-small.png 1280w,
-                        img/sign-up-form.png       2560w
-                      "
-                      sizes="(min-width: 769px) 3vw, (min-width: 1020px) 5vw, 390px"
-                      alt="project screenshot"
-                      src="img/sign-up-form.png"
-                    />
-                  </div>
-                  <div class="projects-2__info">
-                    <h2>Sign up Form</h2>
-                    <div class="projects-2__links">
-                      <a
-                        class="projects-2__btn"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        href="https://github.com/shainadeguzman/intro-component-with-signup-form"
-                        ><i class="fab fa-github icon"></i
-                      ></a>
-                      <a
-                        class="projects-2__btn"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        href="https://shainadeguzman.github.io/intro-component-with-signup-form/"
-                        ><i class="fa fa-external-link icon"></i
-                      ></a>
-                    </div>
-                  </div>
-                </figure>
-                <figure class="projects-2__box">
-                  <div class="projects-2__image">
-                    <img
-                      srcset="
-                        img/order-summary-small.png  700w,
-                        img/order-summary.png       1440w
-                      "
-                      sizes="(min-width: 769px) 3vw, (min-width: 1020px) 5vw, 390px"
-                      alt="project screenshot"
-                      src="img/order-summary.png"
-                    />
-                  </div>
-                  <div class="projects-2__info">
-                    <h2>Order Summary Card</h2>
-                    <div class="projects-2__links">
-                      <a
-                        class="projects-2__btn"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        href="https://github.com/shainadeguzman/order-summary-component"
-                        ><i class="fab fa-github icon"></i
-                      ></a>
-                      <a
-                        class="projects-2__btn"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        href="https://shainadeguzman.github.io/order-summary-component/"
                         ><i class="fa fa-external-link icon"></i
                       ></a>
                     </div>
@@ -539,6 +533,13 @@
                     <p>shainajanedg@gmail.com</p>
                   </div>
                 </li>
+                <li>
+                  <i class="fab fa-linkedin-in"></i>
+                  <div>
+                    <h3>LinkedIn</h3>
+                    <p>shainajanedg@gmail.com</p>
+                  </div>
+                </li>
               </ul>
             </div>
             <div class="contact__form-content">
@@ -549,7 +550,7 @@
                     <input
                       type="text"
                       name="name"
-                      class="contact__name"
+                      class="contact__name tab-item"
                       placeholder="Your name"
                     />
                     <span class="contact__error-msg name__error"></span>
@@ -559,7 +560,7 @@
                     <input
                       type="email"
                       name="email"
-                      class="contact__email"
+                      class="contact__email tab-item"
                       placeholder="Your email"
                     />
                     <span class="contact__error-msg email__error"></span>
@@ -570,12 +571,17 @@
                   <textarea
                     name="message"
                     placeholder="Your message here..."
-                    class="contact__message"
+                    class="contact__message tab-item"
                   ></textarea>
                   <span class="contact__error-msg message__error"></span>
                 </div>
                 <div class="contact__button btn">
-                  <input type="submit" name="submit" value="Submit" />
+                  <input
+                    type="submit"
+                    class="tab-item"
+                    name="submit"
+                    value="Submit"
+                  />
                 </div>
               </form>
             </div>
@@ -648,7 +654,9 @@
             <div class="footer__row">
               <p>
                 Copyright &copy; 2022. Created by
-                <a class="home-link" href="index.html">Shaina De Guzman</a>
+                <a class="home-link tab-item" href="index.html"
+                  >Shaina De Guzman</a
+                >
               </p>
               <ul>
                 <li>
@@ -656,6 +664,7 @@
                     href="https://github.com/shainadeguzman/shainadeguzman"
                     target="_blank"
                     rel="noopener noreferrer"
+                    class="tab-item"
                     ><i title="Github" class="fab fa-github"></i
                   ></a>
                 </li>
@@ -664,6 +673,7 @@
                     href="https://www.linkedin.com/in/shainadeguzman"
                     target="_blank"
                     rel="noopener noreferrer"
+                    class="tab-item"
                     ><i title="LinkedIn" class="fab fa-linkedin-in"></i
                   ></a>
                 </li>
@@ -672,6 +682,7 @@
                     href="https://web.facebook.com/shaina.deguzman.1238"
                     target="_blank"
                     rel="noopener noreferrer"
+                    class="tab-item"
                     ><i title="Facebook" class="fab fa-facebook-f"></i
                   ></a>
                 </li>

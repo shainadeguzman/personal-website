@@ -36,9 +36,13 @@
     margin: 0;
     list-style-type: none;
     display: flex;
-    gap: 3rem;
+    gap: 2rem;
     flex-wrap: wrap;
     width: 100%;
+
+    @include respond-to(large) {
+      gap: 3rem;
+    }
   }
 
   &__list li {
@@ -48,6 +52,9 @@
     color: $light-purple;
     flex: 0 0 auto;
     font-size: $font-content-medium;
+    border: 1px solid transparent;
+    padding: 1rem;
+    transition: border $transition ease;
 
     @include respond-to(large) {
       font-size: $font-content-large;
@@ -59,9 +66,13 @@
     margin-right: 0.6rem;
 
     @include respond-to(large) {
-      width: 4rem;
+      width: 3.5rem;
       margin-right: 1rem;
     }
+  }
+
+  &__list li:hover {
+    border-color: $light-gray;
   }
 
   &__text {

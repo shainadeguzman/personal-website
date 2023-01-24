@@ -58,6 +58,14 @@
     display: flex;
     align-items: center;
     margin: 3rem 0;
+    border: 1px solid transparent;
+    padding: 1.4rem;
+    border-radius: 5px;
+    transition: border $transition ease;
+  }
+
+  &__info-list li:hover {
+    border-color: $light-gray;
   }
 
   &__info-list li:first-child {
@@ -127,22 +135,28 @@
   &__input input,
   textarea {
     width: 100%;
-    height: 3rem;
-    padding: 0.4rem;
+    height: 3.4rem;
+    padding: 0.6rem 0.8rem;
     font-size: $font-content-medium;
     background: #69667e1a;
     border: 1px solid transparent;
     border-radius: 5px;
     color: $dark-blue;
     font-family: $heebo;
+    transition: border $transition ease;
 
     @include respond-to(medium) {
-      height: 4rem;
+      height: 4.4rem;
     }
 
     @include respond-to(large) {
       font-size: $font-content-large;
     }
+  }
+
+  &__input input:hover,
+  textarea:hover {
+    border-color: $light-purple;
   }
 
   &__input input:focus-visible,
@@ -191,16 +205,18 @@
     color: $primary-light;
     transition: background $transition ease, box-shadow $transition ease-in-out;
     font-weight: 500;
-    font-size: 1.5em;
+    font-size: 1.6em;
     border: none;
-    padding: 0.6rem 0.4rem;
+    padding: 0.6rem 1.4rem;
     border-radius: 5px;
     font-family: $heebo;
     letter-spacing: 1px;
+    outline: 2px dashed transparent;
+    transition: all 0.2s ease;
 
     &:focus-visible {
-      outline: none;
-      border: 2px solid $dark-blue;
+      outline-color: $light-purple;
+      outline-offset: 5px;
     }
 
     &:hover {

@@ -13,7 +13,7 @@
   }
 
   &__navigation {
-    height: 6rem;
+    height: 7rem;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -44,7 +44,7 @@
   }
 
   &__items {
-    margin: 0 1.6rem;
+    margin: 0 2.4rem;
 
     &:last-child {
       margin-right: 0;
@@ -55,8 +55,8 @@
     padding: 0.1rem 0.2rem;
     text-decoration: none;
     text-transform: uppercase;
-    font-size: 1.7rem;
-    font-weight: 600;
+    font-size: 1.8rem;
+    font-weight: 500;
     color: $dark-gray;
     transition: color $transition ease, border $transition ease;
     border-bottom: 1px solid transparent;
@@ -131,5 +131,17 @@
 
   &__button.active .header__button-line:nth-child(3) {
     transform: translateY(0) rotate(-45deg);
+  }
+
+  a,
+  button {
+    outline: 2px dashed transparent;
+    transition: all 0.2s ease;
+  }
+
+  a:focus-visible,
+  button:focus-visible {
+    outline-color: $light-purple;
+    outline-offset: 5px;
   }
 }

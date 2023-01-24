@@ -12,6 +12,7 @@ const contactUserMessage = document.querySelector(".contact__message");
 const contactNameError = document.querySelector(".name__error");
 const contactEmailError = document.querySelector(".email__error");
 const contactMessageError = document.querySelector(".message__error");
+const tabItems = document.querySelectorAll(".tab-item");
 
 // FUNCTIONS
 const openNavigation = function () {
@@ -51,8 +52,10 @@ let hamburgerIsActive = false;
 hamburgerButton.addEventListener("click", function () {
   if (!hamburgerIsActive) {
     openNavigation();
+    tabItems.forEach((item) => (item.tabIndex = "-1"));
   } else {
     closeNavigation();
+    tabItems.forEach((item) => (item.tabIndex = ""));
   }
 });
 
@@ -62,6 +65,7 @@ mobileNavigationLinks.forEach((link) => {
       openNavigation();
     } else {
       closeNavigation();
+      tabItems.forEach((item) => (item.tabIndex = ""));
     }
   });
 });
@@ -70,6 +74,7 @@ window.addEventListener("resize", function () {
   const vw = Math.max(document.documentElement.clientWidth);
   if (vw >= 769) {
     closeNavigation();
+    tabItems.forEach((item) => (item.tabIndex = ""));
   } else {
     hamburgerIsActive = false;
   }
@@ -78,6 +83,7 @@ window.addEventListener("resize", function () {
 overlay.addEventListener("click", function () {
   if (hamburgerButton.classList.contains("active")) {
     closeNavigation();
+    tabItems.forEach((item) => (item.tabIndex = ""));
   }
 });
 

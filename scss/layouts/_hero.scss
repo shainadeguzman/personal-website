@@ -48,7 +48,9 @@
   }
 
   &__cta {
-    font-size: 1.5rem;
+    font-size: 1.5em;
+    outline: 2px dashed transparent;
+    transition: all 0.2s ease;
 
     @include respond-to(large) {
       font-size: $font-content-medium;
@@ -56,7 +58,7 @@
   }
 
   &__icon {
-    margin-left: 2rem;
+    margin-left: 1.6rem;
   }
 
   &__image {
@@ -109,5 +111,10 @@
   &__image g#purple.reveal {
     opacity: 1;
     transform: translateX(0) translateY(0);
+  }
+
+  a:focus-visible {
+    outline-color: $light-purple;
+    outline-offset: 5px;
   }
 }
